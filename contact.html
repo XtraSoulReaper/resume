@@ -1,15 +1,18 @@
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Noah Schaepman</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Noah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+
   <header>
-    <h1>Noah Schaepman</h1>
-    <p>Get in touch with me</p>
+    <h1>Contact Me</h1>
+    <p>Let’s connect — I’m open to opportunities and collaborations.</p>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -20,16 +23,31 @@
   </header>
 
   <section class="content">
-    <h2>Contact</h2>
-    <p>You can reach me at <a href="mailto:noahschaepman@gmail.com">noahschaepman@gmail.com</a> or through my social links below.</p>
+    <h2>Reach Out</h2>
+
+    <p>Email: <a href="mailto:noahschaepman@gmail.com">noahschaepman@gmail.com</a></p>
+    <p>Phone: <a href="tel:+61435454930">0435 454 930</a></p>
+    <p>Location: Minmi, NSW</p>
+
+    <br>
+
+    <h3>Downloads</h3>
+    <p>
+      <a class="download-btn" href="NoahSchaepman_Resume.pdf" download>📄 Download My Resume</a>
+    </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Noah Schaepman</p>
-    <div class="social-links">
-      <a href="#">GitHub</a>
-      <a href="#">Instagram</a>
-    </div>
+    <p>© 2025 Noah Schaepman</p>
   </footer>
+
+  <script>
+    // Simple fade-in on load
+    window.addEventListener('load', () => {
+      document.querySelector('.content').style.opacity = '1';
+      document.querySelector('.content').style.transform = 'translateY(0)';
+    });
+  </script>
+
 </body>
 </html>
