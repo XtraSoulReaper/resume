@@ -3,213 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noah Schaepman - Personal Website</title>
+  <title>Noah Schaepman - Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(90deg, #2c3e50, #34495e);
-      color: #fff;
-      text-align: center;
-      padding: 80px 0;
-    }
-
-    header h1 {
-      font-size: 40px;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 18px;
-      font-weight: 400;
-      margin-bottom: 30px;
-    }
-
-    section {
-      padding: 60px 0;
-      max-width: 1000px;
-      margin: 0 auto;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-      margin-top: -60px;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 32px;
-      font-weight: 600;
-      margin-bottom: 30px;
-    }
-
-    .content p {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 25px;
-      text-align: center;
-      line-height: 1.7;
-    }
-
-    .content ul {
-      list-style-type: none;
-      margin: 20px 0;
-      padding: 0;
-    }
-
-    .content ul li {
-      font-size: 18px;
-      color: #555;
-      margin: 10px 0;
-    }
-
-    .button {
-      background-color: #2c3e50;
-      color: #fff;
-      padding: 12px 30px;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: 500;
-      transition: background-color 0.3s;
-    }
-
-    .button:hover {
-      background-color: #34495e;
-    }
-
-    .contact form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .contact input, .contact textarea {
-      padding: 15px;
-      font-size: 16px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background-color: #f7f7f7;
-    }
-
-    .contact button {
-      padding: 15px;
-      font-size: 16px;
-      background-color: #2c3e50;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .contact button:hover {
-      background-color: #34495e;
-    }
-
-    footer {
-      background-color: #2c3e50;
-      color: #fff;
-      padding: 30px 0;
-      text-align: center;
-    }
-
-    footer p {
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    .social-links a {
-      color: #fff;
-      font-size: 20px;
-      margin: 0 10px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .social-links a:hover {
-      color: #3498db;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 30px;
-      }
-
-      header p {
-        font-size: 16px;
-      }
-
-      .content p {
-        font-size: 16px;
-      }
-
-      .contact input, .contact textarea {
-        font-size: 14px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Header Section -->
   <header>
     <h1>Noah Schaepman</h1>
     <p>Welcome to my personal website!</p>
-    <a href="#contact" class="button">Get In Touch</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="content">
-      <p>Hi, I'm Noah Schaepman, a passionate developer, gamer, and 3D printing enthusiast based in Minmi, NSW. My expertise lies in combining creativity with technology to build innovative solutions. I believe in continuous learning, always pushing the boundaries of what's possible. Whether it's game development, 3D printing, or creating new technologies, I'm driven to explore and excel.</p>
-    </div>
+  <section id="home">
+    <h2>Welcome to My Personal Website</h2>
+    <p>Explore my work and get in touch.</p>
+    <a href="about.html" class="button">Learn More About Me</a>
   </section>
 
-  <!-- Hobbies Section -->
-  <section id="hobbies">
-    <h2>My Hobbies</h2>
-    <div class="content">
-      <ul>
-        <li><strong>Gaming</strong>: I enjoy playing a variety of games across platforms. My favorites include strategy, role-playing, and simulation genres.</li>
-        <li><strong>3D Printing</strong>: I love creating objects through 3D printing, from custom designs to functional pieces.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <div class="content">
-      <form action="mailto:noahschaepman@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 Noah Schaepman. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://github.com/noahschaepman" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
   </footer>
-
 </body>
 </html>
