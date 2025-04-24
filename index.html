@@ -1,33 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noah Schaepman - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noah Schaepman</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #cfeffd, #fdfdfd);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #7ec8e3, #dbefff);
+      color: #001f3f;
+      text-align: center;
+      padding: 80px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #003049;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+      color: #0077b6;
+    }
+
+    section {
+      padding: 60px 0;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #ffffffcc;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+      margin-top: -60px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #005f73;
+    }
+
+    .content p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 25px;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #7ec8e3, #dbefff);
+      color: #001f3f;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    footer .social-links a {
+      color: #001f3f;
+      font-size: 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    footer .social-links a:hover {
+      color: #0077b6;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Noah Schaepman</h1>
-    <p>Welcome to my personal website!</p>
+    <p>Welcome to my personal site</p>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home">
-    <h2>Welcome to My Personal Website</h2>
-    <p>Explore my work and get in touch.</p>
-    <a href="about.html" class="button">Learn More About Me</a>
+  <section class="content">
+    <h2>Home</h2>
+    <p>This is my personal website. Learn more about who I am, what I do, and how to get in touch.</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Noah Schaepman. All rights reserved.</p>
+    <p>&copy; 2025 Noah Schaepman</p>
+    <div class="social-links">
+      <a href="#">GitHub</a>
+      <a href="#">Instagram</a>
+    </div>
   </footer>
 </body>
 </html>
