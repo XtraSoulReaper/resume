@@ -1,5 +1,4 @@
-/* style.css - Skyblue & Pearl White Gradient */
-
+/* Base styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,37 +7,30 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom right, #a7dfff, #fdfdfd);
-  color: #1a1a1a;
-  line-height: 1.6;
-  min-height: 100vh;
+  background: linear-gradient(45deg, #87CEEB, #EAEAEA);
+  color: #333;
+  padding: 20px;
 }
 
 header {
-  background: linear-gradient(to right, #87ceeb, #f0f0f5);
-  color: #002b36;
   text-align: center;
-  padding: 80px 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
 }
 
-header h1 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 12px;
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-header p {
-  font-size: 18px;
-  color: #555;
-  font-weight: 400;
-  margin-bottom: 25px;
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 nav ul li {
@@ -46,73 +38,40 @@ nav ul li {
   margin: 0 15px;
 }
 
-nav ul li a {
+nav a {
   text-decoration: none;
   color: #004b66;
-  font-size: 18px;
   font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 1rem;
 }
 
-nav ul li a:hover {
-  color: #0077b6;
-}
-
-section {
-  background: rgba(255, 255, 255, 0.9);
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 60px 40px;
-  border-radius: 14px;
-  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
-}
-
-h2 {
-  font-size: 30px;
-  font-weight: 600;
-  color: #005f73;
+.content {
   text-align: center;
-  margin-bottom: 30px;
-}
-
-.content p {
-  font-size: 18px;
-  color: #333;
-  text-align: center;
-  line-height: 1.8;
-  margin-bottom: 30px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 footer {
-  background: linear-gradient(to right, #87ceeb, #fdfdfd);
-  color: #003049;
-  padding: 30px 0;
   text-align: center;
-  border-top: 1px solid #ccc;
+  margin-top: 50px;
 }
 
-footer p {
-  font-size: 14px;
-  font-weight: 400;
+/* Social Media Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-footer .social-links a {
-  color: #003049;
-  font-size: 20px;
-  margin: 0 12px;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.social-icon img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
 }
 
-footer .social-links a:hover {
-  color: #0077b6;
-}
-
-/* Animation on page load */
-.content {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+.social-icon img:hover {
+  transform: scale(1.1);
 }
 
 /* Resume Download Button */
