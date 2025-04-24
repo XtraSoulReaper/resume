@@ -3,167 +3,213 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noah Schaepman - Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Noah Schaepman - Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f7f6;
+    * {
       margin: 0;
-      padding: 40px;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f9;
       color: #333;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 40px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-    h1 {
-      font-size: 40px;
-      margin-bottom: 0;
-      color: #2b2b2b;
-    }
-    h2 {
-      font-size: 24px;
-      margin-top: 20px;
-      color: #444;
-      border-bottom: 2px solid #2b2b2b;
-      padding-bottom: 5px;
-    }
-    .contact {
-      font-size: 16px;
-      color: #666;
-      margin: 10px 0 20px;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      font-size: 16px;
       line-height: 1.6;
-      color: #555;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2c3e50, #34495e);
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    header h1 {
+      font-size: 40px;
+      font-weight: 600;
       margin-bottom: 10px;
     }
-    .position-title {
-      font-weight: 600;
+
+    header p {
       font-size: 18px;
-      color: #333;
+      font-weight: 400;
+      margin-bottom: 30px;
     }
-    .organization {
-      font-size: 14px;
-      color: #777;
-      font-style: italic;
+
+    section {
+      padding: 60px 0;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+      margin-top: -60px;
     }
-    .section p {
-      font-size: 16px;
-      color: #555;
-      line-height: 1.8;
-    }
-    .footer {
+
+    h2 {
       text-align: center;
-      margin-top: 40px;
-      color: #888;
-      font-size: 14px;
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 30px;
     }
-    .copy-btn {
-      background-color: #007bff;
+
+    .content p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 25px;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    .content ul {
+      list-style-type: none;
+      margin: 20px 0;
+      padding: 0;
+    }
+
+    .content ul li {
+      font-size: 18px;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    .button {
+      background-color: #2c3e50;
       color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #34495e;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 15px;
       font-size: 16px;
-      margin-top: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f7f7f7;
     }
-    .copy-btn:hover {
-      background-color: #0056b3;
+
+    .contact button {
+      padding: 15px;
+      font-size: 16px;
+      background-color: #2c3e50;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
     }
-    .resume-content {
-      user-select: text;
+
+    .contact button:hover {
+      background-color: #34495e;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .social-links a {
+      color: #fff;
+      font-size: 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #3498db;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      .content p {
+        font-size: 16px;
+      }
+
+      .contact input, .contact textarea {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <!-- Header Section -->
+  <header>
     <h1>Noah Schaepman</h1>
-    <div class="contact">
-      Minmi, NSW | 0435 454 930 | noahschaepman@gmail.com
-    </div>
+    <p>Welcome to my personal website!</p>
+    <a href="#contact" class="button">Get In Touch</a>
+  </header>
 
-    <div class="section resume-content">
-      <h2>Professional Summary</h2>
-      <p>
-        A reliable and adaptable individual with solid hands-on experience in customer service and hospitality. Known for delivering results in high-pressure environments, exhibiting strong interpersonal skills, and providing excellent customer satisfaction. Seeking opportunities where initiative, teamwork, and problem-solving are valued to contribute effectively and grow professionally.
-      </p>
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="content">
+      <p>Hi, I'm Noah Schaepman, a passionate developer, gamer, and 3D printing enthusiast based in Minmi, NSW. My expertise lies in combining creativity with technology to build innovative solutions. I believe in continuous learning, always pushing the boundaries of what's possible. Whether it's game development, 3D printing, or creating new technologies, I'm driven to explore and excel.</p>
     </div>
+  </section>
 
-    <div class="section resume-content">
-      <h2>Core Skills</h2>
+  <!-- Hobbies Section -->
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="content">
       <ul>
-        <li>Customer Service & Support</li>
-        <li>Task & Workflow Management</li>
-        <li>Hospitality & Food Handling</li>
-        <li>Team Collaboration & Communication</li>
-        <li>Health & Safety Compliance</li>
-        <li>Problem Solving & Adaptability</li>
-        <li>Familiar with digital tools: Google Workspace, Trello, Notion (basic)</li>
+        <li><strong>Gaming</strong>: I enjoy playing a variety of games across platforms. My favorites include strategy, role-playing, and simulation genres.</li>
+        <li><strong>3D Printing</strong>: I love creating objects through 3D printing, from custom designs to functional pieces.</li>
       </ul>
     </div>
+  </section>
 
-    <div class="section resume-content">
-      <h2>Professional Experience</h2>
-      <div class="position-title">Hospitality Staff (Casual)</div>
-      <div class="organization">Cheforce - Newcastle & Hunter Region, NSW | October 2024 - Present</div>
-      <ul>
-        <li>Worked in various hospitality venues including events, restaurants, and catering environments.</li>
-        <li>Adapted seamlessly to new teams and fast-paced shifts with minimal supervision.</li>
-        <li>Ensured high standards of food hygiene and safety while providing exceptional customer service.</li>
-        <li>Successfully handled a variety of roles, including food and beverage service, kitchen support, and front-of-house duties.</li>
-      </ul>
-
-      <div class="position-title">Crew Member</div>
-      <div class="organization">McDonald's - Glendale, NSW | March 2024 - March 2025</div>
-      <ul>
-        <li>Provided fast, accurate service in a high-volume, time-sensitive environment.</li>
-        <li>Ensured consistent cleanliness and high operational standards, promoting an efficient team dynamic.</li>
-        <li>Adapted quickly to rotating roles and responsibilities, handling both front and back-of-house tasks.</li>
-        <li>Managed multiple tasks simultaneously, ensuring customer satisfaction under pressure.</li>
-      </ul>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="content">
+      <form action="mailto:noahschaepman@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
+  </section>
 
-    <div class="section resume-content">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Hunter Christian School</strong> – Newcastle, NSW<br>Year 11 – Present (Expected Graduation: 2026)</li>
-        <li><strong>TAFE NSW</strong> (via Distance Education)<br>Completed Year 10 Curriculum – 2023</li>
-        <li><strong>Home Education</strong><br>Years 9 – 10 | Completed via registered homeschooling program</li>
-        <li><strong>Maitland Christian School</strong> – Maitland, NSW<br>Kindergarten – Year 8</li>
-      </ul>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Noah Schaepman. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/noahschaepman" target="_blank"><i class="fab fa-github"></i></a>
     </div>
+  </footer>
 
-    <button class="copy-btn" onclick="copyContent()">Copy Resume</button>
-  </div>
-
-  <div class="footer">
-    <p>Resume generated by Noah Schaepman | All Rights Reserved</p>
-  </div>
-
-  <script>
-    function copyContent() {
-      const range = document.createRange();
-      range.selectNode(document.querySelector(".resume-content"));
-      window.getSelection().removeAllRanges();
-      window.getSelection().addRange(range);
-      document.execCommand('copy');
-      alert('Resume copied to clipboard!');
-    }
-  </script>
 </body>
 </html>
