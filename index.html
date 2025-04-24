@@ -85,6 +85,9 @@
     .copy-btn:hover {
       background-color: #0056b3;
     }
+    .resume-content {
+      user-select: text;
+    }
   </style>
 </head>
 <body>
@@ -94,14 +97,14 @@
       Minmi, NSW | 0435 454 930 | noahschaepman@gmail.com
     </div>
 
-    <div class="section">
+    <div class="section resume-content">
       <h2>Professional Summary</h2>
       <p>
         A reliable and adaptable individual with solid hands-on experience in customer service and hospitality. Known for delivering results in high-pressure environments, exhibiting strong interpersonal skills, and providing excellent customer satisfaction. Seeking opportunities where initiative, teamwork, and problem-solving are valued to contribute effectively and grow professionally.
       </p>
     </div>
 
-    <div class="section">
+    <div class="section resume-content">
       <h2>Core Skills</h2>
       <ul>
         <li>Customer Service & Support</li>
@@ -114,7 +117,7 @@
       </ul>
     </div>
 
-    <div class="section">
+    <div class="section resume-content">
       <h2>Professional Experience</h2>
       <div class="position-title">Hospitality Staff (Casual)</div>
       <div class="organization">Cheforce - Newcastle & Hunter Region, NSW | October 2024 - Present</div>
@@ -135,7 +138,7 @@
       </ul>
     </div>
 
-    <div class="section">
+    <div class="section resume-content">
       <h2>Education</h2>
       <ul>
         <li><strong>Hunter Christian School</strong> – Newcastle, NSW<br>Year 11 – Present (Expected Graduation: 2026)</li>
@@ -145,7 +148,7 @@
       </ul>
     </div>
 
-    <button class="copy-btn" onclick="copyText()">Copy to Clipboard</button>
+    <button class="copy-btn" onclick="copyContent()">Copy Resume</button>
   </div>
 
   <div class="footer">
@@ -153,15 +156,13 @@
   </div>
 
   <script>
-    function copyText() {
-      const text = document.documentElement.innerHTML;
-      const tempInput = document.createElement('textarea');
-      document.body.appendChild(tempInput);
-      tempInput.value = text;
-      tempInput.select();
+    function copyContent() {
+      const range = document.createRange();
+      range.selectNode(document.querySelector(".resume-content"));
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
       document.execCommand('copy');
-      document.body.removeChild(tempInput);
-      alert('HTML content copied to clipboard!');
+      alert('Resume copied to clipboard!');
     }
   </script>
 </body>
