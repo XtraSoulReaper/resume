@@ -17,20 +17,22 @@ header {
   margin-bottom: 30px;
 }
 
-h1 {
-  font-size: 2.5rem;
+.header-container h1 {
+  font-size: 3rem;
   font-weight: 600;
+  color: #004b66;
 }
 
-p {
+header p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  color: #004b66;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   text-align: center;
+  margin-top: 15px;
 }
 
 nav ul li {
@@ -43,6 +45,7 @@ nav a {
   color: #004b66;
   font-weight: 500;
   font-size: 1rem;
+  text-transform: uppercase;
 }
 
 .content {
@@ -56,6 +59,11 @@ footer {
   margin-top: 50px;
 }
 
+footer p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
 /* Social Media Links */
 .social-links {
   display: flex;
@@ -64,28 +72,12 @@ footer {
   margin-top: 20px;
 }
 
-.social-icon img {
-  width: 35px;
-  height: 35px;
-  transition: transform 0.3s ease;
-}
-
-.social-icon img:hover {
-  transform: scale(1.1);
-}
-
-/* Resume Download Button */
-.download-btn {
-  display: inline-block;
-  padding: 10px 16px;
-  background: #004b66;
-  color: #fff;
-  border-radius: 8px;
+.social-links a {
   text-decoration: none;
+  color: #004b66;
   font-weight: 500;
-  transition: background 0.3s ease;
 }
 
-.download-btn:hover {
-  background: #006b99;
+.social-links a:hover {
+  text-decoration: underline;
 }
