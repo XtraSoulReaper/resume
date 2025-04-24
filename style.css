@@ -1,103 +1,109 @@
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+/* style.css - Skyblue & Pearl White Gradient */
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(180deg, #cfeffd, #fdfdfd);
-      color: #333;
-      line-height: 1.6;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    header {
-      background: linear-gradient(90deg, #7ec8e3, #dbefff);
-      color: #001f3f;
-      text-align: center;
-      padding: 80px 0;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #a7dfff, #fdfdfd);
+  color: #1a1a1a;
+  line-height: 1.6;
+  min-height: 100vh;
+}
 
-    header h1 {
-      font-size: 40px;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
+header {
+  background: linear-gradient(to right, #87ceeb, #f0f0f5);
+  color: #002b36;
+  text-align: center;
+  padding: 80px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-bottom: 1px solid #ccc;
+}
 
-    header p {
-      font-size: 18px;
-      font-weight: 400;
-      margin-bottom: 30px;
-    }
+header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
 
-    nav ul {
-      list-style-type: none;
-    }
+header p {
+  font-size: 18px;
+  color: #555;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
 
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
+nav ul {
+  list-style: none;
+  padding: 0;
+}
 
-    nav ul li a {
-      color: #003049;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 500;
-    }
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
 
-    nav ul li a:hover {
-      text-decoration: underline;
-      color: #0077b6;
-    }
+nav ul li a {
+  text-decoration: none;
+  color: #004b66;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
 
-    section {
-      padding: 60px 0;
-      max-width: 1000px;
-      margin: 0 auto;
-      background-color: #ffffffcc;
-      border-radius: 12px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-      margin-top: -60px;
-    }
+nav ul li a:hover {
+  color: #0077b6;
+}
 
-    h2 {
-      text-align: center;
-      font-size: 32px;
-      font-weight: 600;
-      margin-bottom: 30px;
-      color: #005f73;
-    }
+section {
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 60px 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
+}
 
-    .content p {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 25px;
-      text-align: center;
-      line-height: 1.7;
-    }
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #005f73;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-    footer {
-      background: linear-gradient(90deg, #7ec8e3, #dbefff);
-      color: #001f3f;
-      padding: 30px 0;
-      text-align: center;
-    }
+.content p {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
 
-    footer p {
-      font-size: 14px;
-      font-weight: 400;
-    }
+footer {
+  background: linear-gradient(to right, #87ceeb, #fdfdfd);
+  color: #003049;
+  padding: 30px 0;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
 
-    footer .social-links a {
-      color: #001f3f;
-      font-size: 20px;
-      margin: 0 10px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
+footer p {
+  font-size: 14px;
+  font-weight: 400;
+}
 
-    footer .social-links a:hover {
-      color: #0077b6;
-    }
+footer .social-links a {
+  color: #003049;
+  font-size: 20px;
+  margin: 0 12px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #0077b6;
+}
